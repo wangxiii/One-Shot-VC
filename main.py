@@ -14,12 +14,12 @@ if __name__ == '__main__':
     parser.add_argument('-logdir', default='log/')
     parser.add_argument('--load_model', action='store_true')
     parser.add_argument('--load_opt', action='store_true')
-    parser.add_argument('-store_model_path', default='/work/b07u1234/b07505026/hw2-2/model')
-    parser.add_argument('-load_model_path', default='/work/b07u1234/b07505026/hw2-2/model')
+    parser.add_argument('-store_model_path', default='/work/b07u1234/b07505026/hw2-2/model/origin')
+    parser.add_argument('-load_model_path', default='/work/b07u1234/b07505026/hw2-2/model/origin')
     parser.add_argument('-summary_steps', default=100, type=int)
-    parser.add_argument('-save_steps', default=1000, type=int)
+    parser.add_argument('-save_steps', default=10000, type=int)
     parser.add_argument('-tag', '-t', default='init')
-    parser.add_argument('-iters', default=2000, type=int)
+    parser.add_argument('-iters', default=200000, type=int)
 
     args = parser.parse_args()
     

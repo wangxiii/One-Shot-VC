@@ -10,7 +10,7 @@ SpeakerEncoder:
     n_dense_blocks: 6
     subsample: [1, 2, 1, 2, 1, 2]
     act: 'relu'
-    dropout_rate: 0
+    dropout_rate: 0.2
 ContentEncoder:
     c_in: 512
     c_h: 128
@@ -22,7 +22,7 @@ ContentEncoder:
     n_conv_blocks: 6
     subsample: [1, 2, 1, 2, 1, 2]
     act: 'relu'
-    dropout_rate: 0
+    dropout_rate: 0.2
 Decoder:
     c_in: 128
     c_cond: 128
@@ -33,7 +33,7 @@ Decoder:
     upsample: [2, 1, 2, 1, 2, 1]
     act: 'relu'
     sn: False
-    dropout_rate: 0
+    dropout_rate: 0.2
 data_loader:
     segment_size: 128
     frame_size: 1
