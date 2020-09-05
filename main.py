@@ -8,7 +8,7 @@ if __name__ == '__main__':
     parser = ArgumentParser()
     parser.add_argument('-config', '-c', default='config.yaml')
     parser.add_argument('-data_dir', '-d', 
-            default='/work/b07u1234/b07505026/hw2-2/vctk/trimmed_vctk_spectrograms/sr_24000_mel_norm')
+            default='/work/b07u1234/b06502162/HW2-1/github-HW2-1/vctk/trimmed_vctk_spectrograms/sr_24000_mel_norm')
     parser.add_argument('-train_set', default='train')
     parser.add_argument('-train_index_file', default='train_samples_128.json')
     parser.add_argument('-logdir', default='log/')
