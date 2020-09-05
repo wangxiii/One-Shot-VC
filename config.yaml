@@ -6,9 +6,9 @@ SpeakerEncoder:
     bank_size: 8
     bank_scale: 1
     c_bank: 128
-    n_conv_blocks: 6
-    n_dense_blocks: 6
-    subsample: [1, 2, 1, 2, 1, 2]
+    n_conv_blocks: 4
+    n_dense_blocks: 4
+    subsample: [1, 2, 1, 2]
     act: 'relu'
     dropout_rate: 0.2
 ContentEncoder:
@@ -19,8 +19,8 @@ ContentEncoder:
     bank_size: 8
     bank_scale: 1
     c_bank: 128
-    n_conv_blocks: 6
-    subsample: [1, 2, 1, 2, 1, 2]
+    n_conv_blocks: 4
+    subsample: [1, 2, 1, 2]
     act: 'relu'
     dropout_rate: 0.2
 Decoder:
@@ -29,8 +29,8 @@ Decoder:
     c_h: 128
     c_out: 512
     kernel_size: 5
-    n_conv_blocks: 6
-    upsample: [2, 1, 2, 1, 2, 1]
+    n_conv_blocks: 4
+    upsample: [2, 1, 2, 1]
     act: 'relu'
     sn: False
     dropout_rate: 0.2
